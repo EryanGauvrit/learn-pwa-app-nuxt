@@ -1,6 +1,6 @@
 <template>
     <main class="container max-w-4xl m-auto">
-        <h1 class="text-4xl text-center mt-8 uppercase">Welcome to the Nuxt Shop</h1>
+        <h1 class="text-4xl text-center mt-8 uppercase font-bold">The Nuxt Shop</h1>
         <div class="flex justify-center space-x-4 mt-4">
             <button @click="filterData('burgers')" class="bg-primary text-background py-2 px-4 rounded-sm">Burgers</button>
             <button @click="filterData('desserts')" class="bg-primary text-background py-2 px-4 rounded-sm">Desserts</button>

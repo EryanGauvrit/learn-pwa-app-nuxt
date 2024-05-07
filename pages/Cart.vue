@@ -1,8 +1,11 @@
 <template>
     <main class="container max-w-4xl m-auto mt-10">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
             <h1 class="text-2xl font-bold">Your cart</h1>
-            <p class="text-xl font-bold">Total: {{ total }}€</p>
+            <div class="flex gap-2 items-center">
+                <p class="text-xl font-bold">Total: {{ total }}€</p>
+                <button v-if="total > 0" class="bg-green-800 text-background py-2 px-4 rounded-sm">Pay</button>
+            </div>
         </div>
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10">
             <div v-for="article in cart" :key="article.id" class="bg-card text-card-foreground border rounded-md shadow-sm hover:scale-[1.05] duration-200 overflow-hidden">

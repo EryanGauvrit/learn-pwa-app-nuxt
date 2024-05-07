@@ -1,5 +1,6 @@
 <template>
     <div class="w-full bg-background text-foreground min-h-screen">
+        <NuxtPwaManifest />
         <slot />
         <nav class="w-full flex justify-center bg-primary text-background items-center py-4 fixed bottom-0">
             <ul class="flex justify-around space-x-10">
